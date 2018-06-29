@@ -59,3 +59,4 @@ class SparkApp(basetests.BaseTestClass):
     def test_predict_value_invalid(self):
         result = self.app.get("/predict?value=abc")
         self.assertEqual(result.status_code, 500)
+

@@ -4,7 +4,7 @@ resources:
   type: git
   source:
     uri: git@github.com:muralidhar26/PySpark-App-CF.git
-    branch: master
+    branch: test
     private_key: {{private-key}}
 
 - name: pws
