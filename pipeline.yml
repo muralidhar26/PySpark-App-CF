@@ -7,7 +7,7 @@ resources:
     branch: test
     username: {{git-username}}
     password: {{git-password}}
-    
+    skip_ssl_verification: true
 
 - name: pws
   type: cf
@@ -66,6 +66,7 @@ jobs:
       passed: [test-pyspark-app-api]
     - put: pws
       params:
+        skip_ssl_verification: true
         manifest: pyspark-app-ci/manifest_testing.yml
         path: pyspark-app-ci/
 
@@ -76,5 +77,6 @@ jobs:
       passed: [test-pyspark-app-api]
     - put: pws
       params:
+        skip_ssl_verification: true
         manifest: pyspark-app-ci/manifest_production.yml
         path: pyspark-app-ci/
