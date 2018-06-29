@@ -3,9 +3,11 @@ resources:
 - name: pyspark-app-ci
   type: git
   source:
-    uri: git@github.com:muralidhar26/PySpark-App-CF.git
+    uri: https://github.com/muralidhar26/PySpark-App-CF.git
     branch: test
-    private_key: {{private-key}}
+    username: {{git-username}}
+    password: {{git-password}}
+    
 
 - name: pws
   type: cf
