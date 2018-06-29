@@ -40,5 +40,6 @@ if __name__ == "__main__":
     input_data = generate_data()
     df = convert_to_df(spark_session, input_data)
     model = fit_model(df)
+
     save_model(model)
 
