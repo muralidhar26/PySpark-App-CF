@@ -25,3 +25,4 @@ class LinearRegressionTraining(basetests.BaseTestClass):
 
     def test_fit_model_intercept(self):
         self.assertAlmostEqual(self.model.intercept, 0.39516052)
+
