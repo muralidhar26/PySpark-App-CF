@@ -66,7 +66,7 @@ jobs:
       passed: [test-pyspark-app-api]
     - put: pws
       params:
-        --skip-ssl-validation: true
+        skip-ssl-validation: true
         manifest: pyspark-app-ci/manifest_testing.yml
         path: pyspark-app-ci/
 
@@ -77,6 +77,6 @@ jobs:
       passed: [test-pyspark-app-api]
     - put: pws
       params:
-        --skip-ssl-validation: true
+        skip-ssl-validation: true
         manifest: pyspark-app-ci/manifest_production.yml
         path: pyspark-app-ci/
