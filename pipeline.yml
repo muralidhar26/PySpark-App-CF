@@ -69,6 +69,10 @@ jobs:
         skip-ssl-validation: true
         manifest: pyspark-app-ci/manifest_testing.yml
         path: pyspark-app-ci/
+        run:
+          path: sh
+          args:
+          - --skip-ssl-validation
 
 - name: deploy-pyspark-app-production
   plan:
@@ -80,3 +84,7 @@ jobs:
         skip-ssl-validation: true
         manifest: pyspark-app-ci/manifest_production.yml
         path: pyspark-app-ci/
+        run:
+          path: sh
+          args:
+          - --skip-ssl-validation
